@@ -334,9 +334,10 @@ GridList.prototype = {
   },
 
   _resolveCollisions: function(item) {
-    if (!this._tryToResolveCollisionsLocally(item)) {
-      this._pullItemsToLeft(item);
-    }
+    // No local collisions at the competition
+    // if (!this._tryToResolveCollisionsLocally(item)) {
+    //   this._pullItemsToLeft(item);
+    // }
     this._pullItemsToLeft();
   },
 

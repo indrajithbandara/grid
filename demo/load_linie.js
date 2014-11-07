@@ -1,5 +1,5 @@
 var DemoGrid = {
-  currentSize: 3,
+  currentSize: 1,
   buildElements: function($gridContainer, items) {
     var item, i;
     for (i = 0; i < items.length; i++) {
@@ -44,7 +44,7 @@ $(window).resize(function() {
 });
 
 $(function() {
-  DemoGrid.buildElements($('#grid'), fixtures.DEMO);
+  DemoGrid.buildElements($('#grid'), fixtures.DEMO_LINIE);
 
   $('#grid').gridList({
     rows: DemoGrid.currentSize,
