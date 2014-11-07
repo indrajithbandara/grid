@@ -338,6 +338,7 @@ GridList.prototype = {
     // if (!this._tryToResolveCollisionsLocally(item)) {
     //   this._pullItemsToLeft(item);
     // }
+    this._pullItemsToLeft(item);
     this._pullItemsToLeft();
   },
 
