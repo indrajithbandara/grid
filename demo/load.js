@@ -1,13 +1,14 @@
 var DemoGrid = {
   currentSize: 3,
   buildElements: function($gridContainer, items) {
-    var item, i;
+    var item, i, numberOnTile;
     for (i = 0; i < items.length; i++) {
       item = items[i];
+      numberOnTile = i + 1;
       $item = $(
         '<li>' +
           '<div class="inner">' +
-            i +
+            numberOnTile +
           '</div>' +
         '</li>'
       );
