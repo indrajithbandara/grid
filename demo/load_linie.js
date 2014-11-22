@@ -4,10 +4,11 @@ var DemoGrid = {
     var item, i;
     for (i = 0; i < items.length; i++) {
       item = items[i];
+      var indexNumber = item+1;
       $item = $(
         '<li>' +
           '<div class="inner">' +
-            i +
+            indexNumber +
           '</div>' +
         '</li>'
       );
